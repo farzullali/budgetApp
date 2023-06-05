@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Budget Application</title>
+</head>
+<body>
+    <header>
+        <h1>Budget App</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <form action="#">
+            <div class="type-container">
+                <label for="type">Type</label>
+                <br>
+                <select name="type" class="type">
+                    <option value="1">Income</option>
+                    <option value="0">Excome</option>
+                </select>
+            </div>
+            <div class="charge-container">
+                <label for="charge">Charge</label>
+                <br>
+                <input type="text" name="charge" id="charge">
+            </div>
+            <div class="amount-container">
+                <label for="Amount">Amount</label>
+                <br>
+                <input type="number" name="amount" id="amount">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-submit" >Submit</button>
+    </form>
+
+
+        <div class="list-container">
+            <ul class="list">
+
+                <!-- <div class="list-item-container">
+                    <li class="list-item">
+                            <p class="p p-type">Income</p>
+                            <p class="p p-charge">Bank</p>
+                            <p class="p p-amount">1500azn</p>
+                    </li>
+                    <div class="list-button">
+                        <button class="btn-item-edit">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn-item-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-item-container">
+                    <li class="list-item">
+                            <p class="p p-type">Income</p>
+                            <p class="p p-charge">Bank</p>
+                            <p class="p p-amount">500azn</p>
+                    </li>
+                    <div class="list-button">
+                        <button class="btn-item-edit">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn-item-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-item-container">
+                    <li class="list-item">
+                            <p class="p p-type">Income</p>
+                            <p class="p p-charge">Bank</p>
+                            <p class="p p-amount">1500azn</p>
+                    </li>
+                    <div class="list-button">
+                        <button class="btn-item-edit">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn-item-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </div> -->
+                
+            </ul>
+        </div>
+        <button class="btn btn-delete-all">Delete All</button>
+
+    </div>
+
+    <h2>Your Balance is <span class="summ">0</span> AZN</h2>
+
+    <script src="js/budgetApp.js"></script>
+</body>
+</html>
